@@ -54,7 +54,7 @@
       }
     ],
     "imageResize": true,
-    "uniqCompNum": 606,
+    "uniqCompNum": 607,
     "versionPublish": "5.9.6",
     "screenshot": "screenshot.png",
     "chatbutton": {},
@@ -796,6 +796,84 @@
           "_global": false,
           "_once": false,
           "_params": {}
+        },
+        {
+          "_name": "progress-bars4",
+          "_sourceTheme": "agencym4",
+          "_customHTML": "<section data-bs-version=\"5.1\" class=\"progress-bars4 agencym4_progress4 circle-progress-section\" group=\"Progress\"\n\tdata-bg-video=\"{{bg.type == 'video' && bg.value.url}}\" plugins=\"as-pie-progress\"\n\tmbr-class=\"{'mbr-parallax-background': bg.parallax}\">\n\n\t<mbr-parameters>\n\t\t\n\t\t<input type=\"range\" inline title=\"Top\" name=\"paddingTop\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\t\t<input type=\"range\" inline title=\"Bottom\" name=\"paddingBottom\" min=\"0\" max=\"8\" step=\"1\" value=\"6\">\n\n\t\t<input type=\"checkbox\" title=\"Show Title\" name=\"showTitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Subtitle\" name=\"showSubtitle\" checked>\n\t\t<input type=\"checkbox\" title=\"Show Text\" name=\"showText\" checked>\n\t\t<input type=\"color\" title=\"Progress Color\" name=\"progressColor\" value=\"#d6173f\">\n\t\t<input type=\"checkbox\" title=\"Gradient Progress\" name=\"gradientProgress\" checked>\n\t\t<input type=\"color\" title=\"Progress Color 2\" name=\"progressColor2\" value=\"#0c57bf\" condition=\"gradientProgress\">\n\t\t<select title=\"Progress count\" name=\"progressCount\">\n\t\t\t<option value=\"1\">1</option>\n\t\t\t<option value=\"2\">2</option>\n\t\t\t<option value=\"3\">3</option>\n\t\t\t<option value=\"4\" selected>4</option>\n\t\t</select>\n\t\t<input type=\"range\" inline title=\"Progress 1\" name=\"progress1\" min=\"0\" max=\"100\" step=\"1\" value=\"100\">\n\t\t<input type=\"range\" inline title=\"Progress 2\" name=\"progress2\" min=\"0\" max=\"100\" step=\"1\" value=\"73\"\n\t\t\tcondition=\"progressCount>1\">\n\t\t<input type=\"range\" inline title=\"Progress 3\" name=\"progress3\" min=\"0\" max=\"100\" step=\"1\" value=\"35\"\n\t\t\tcondition=\"progressCount>2\">\n\t\t<input type=\"range\" inline title=\"Progress 4\" name=\"progress4\" min=\"0\" max=\"100\" step=\"1\" value=\"60\"\n\t\t\tcondition=\"progressCount>3\">\n\t\t<input type=\"range\" inline title=\"Progress 5\" name=\"progress5\" min=\"0\" max=\"100\" step=\"1\" value=\"100\"\n\t\t\tcondition=\"progressCount>4\">\n\t\t<input type=\"range\" inline title=\"Progress 6\" name=\"progress6\" min=\"0\" max=\"100\" step=\"1\" value=\"100\"\n\t\t\tcondition=\"progressCount>5\">\n\t\t<header>Background</header>\n\t\t<fieldset type=\"background\" name=\"bg\" parallax>\n\t\t\t<input type=\"image\" title=\"Image\" value=\"@ADDONS_PATH@/agencym4/components/_images/background2.jpg\" selected>\n\t\t\t<input type=\"color\" title=\"Color\" value=\"#fafafa\" selected>\n\t\t\t<input type=\"video\" title=\"Video\" value=\"https://www.youtube.com/watch?v=36YgDDJ7XSc\">\n\t\t</fieldset>\n        <header condition=\"bg.type === 'video'\">Fallback Image</header>\n        <input type=\"image\" title=\"Fallback Image\" value=\"@ADDONS_PATH@/agencym4/components/_images/background1.jpg\" name=\"fallBackImage\" condition=\"bg.type === 'video'\">\n\n\t\t<input type=\"checkbox\" title=\"Overlay\" name=\"overlay\" condition=\"bg.type !== 'color'\" checked>\n\t\t<input type=\"color\" title=\"Overlay Color\" name=\"overlayColor\" value=\"#cccccc\"\n\t\t\tcondition=\"overlay && bg.type !== 'color'\">\n\t\t<input type=\"range\" inline title=\"Opacity\" name=\"overlayOpacity\" min=\"0\" max=\"1\" step=\"0.1\" value=\"0.7\"\n\t\t\tcondition=\"overlay && bg.type !== 'color'\">\n\t\t\n\t</mbr-parameters>\n    <div class=\"mbr-fallback-image disabled\" mbr-if=\"bg.type == 'video'\"></div>\n\n\n\t<div class=\"mbr-overlay\" mbr-if=\"overlay && bg.type!== 'color'\"\n\t\tmbr-style=\"{'opacity': overlayOpacity, 'background-color': overlayColor}\">\n\t</div>\n\t<svg mbr-if=\"gradientProgress\" class=\"svg-gradient\">\n\t\t<linearGradient>\n\t\t\t<stop offset=\"0%\" stop-color=\"{{progressColor2}}\" ></stop>\n\t\t\t<stop offset=\"100%\" stop-color=\"{{progressColor}}\" ></stop>\n\t\t</linearGradient>\n\t</svg>\n\n\t\n\t\t<h2 class=\"mbr-section-title pb-3 align-center mbr-fonts-style\" mbr-theme-style=\"display-2\" mbr-if=\"showTitle\"\n\t\t\tdata-app-selector=\".mbr-section-title\">\n\t\t\tOur <b>advantages</b>\n\t\t</h2>\n\n\t\t<h3 class=\"mbr-section-subtitle mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showSubtitle\"\n\t\t\tdata-app-selector=\".mbr-section-subtitle\">\n\t\t\tMobirise has provided for website developers a growing library of modern blocks which can be used either\n\t\t\tpartially or in full for every website developed through the builder.\n\t\t</h3>\n\n\t\t<div class=\"media-container-row pt-5 mt-2\">\n\t\t\t<div class=\"card p-3 align-center\">\n\t\t\t\t<div class=\"wrap\">\n\t\t\t\t\t<div class=\"pie_progress progress1\" role=\"progressbar\" data-goal=\"{{progress1}}\">\n\t\t\t\t\t\t<p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"\n\t\t\t\t\t\t\tdata-app-selector=\".pie_progress__number\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-title pt-3\">\n\t\t\t\t\t<h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n\t\t\t\t\t\tMobile friendly\n\t\t\t\t\t</h4>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-text pt-2\">\n\t\t\t\t\t<p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\tmbr-if=\"showText\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 align-center\" mbr-if=\"progressCount>1\">\n\t\t\t\t<div class=\"wrap\">\n\t\t\t\t\t<div class=\"pie_progress progress2\" role=\"progressbar\" data-goal=\"{{progress2}}\">\n\t\t\t\t\t\t<p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"\n\t\t\t\t\t\t\tdata-app-selector=\".pie_progress__number\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-title pt-3\">\n\t\t\t\t\t<h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n\t\t\t\t\t\tNo Coding\n\t\t\t\t\t</h4>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-text pt-2\">\n\t\t\t\t\t<p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\tmbr-if=\"showText\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 align-center\" mbr-if=\"progressCount>2\">\n\t\t\t\t<div class=\"wrap\">\n\t\t\t\t\t<div class=\"pie_progress progress3\" role=\"progressbar\" data-goal=\"{{progress3}}\">\n\t\t\t\t\t\t<p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"\n\t\t\t\t\t\t\tdata-app-selector=\".pie_progress__number\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-title pt-3\">\n\t\t\t\t\t<h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n\t\t\t\t\t\tUnlimited Sites\n\t\t\t\t\t</h4>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-text pt-2\">\n\t\t\t\t\t<p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\tmbr-if=\"showText\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t<div class=\"card p-3 align-center\" mbr-if=\"progressCount>3\">\n\t\t\t\t<div class=\"wrap\">\n\t\t\t\t\t<div class=\"pie_progress progress4\" role=\"progressbar\" data-goal=\"{{progress4}}\">\n\t\t\t\t\t\t<p class=\"pie_progress__number mbr-fonts-style\" mbr-theme-style=\"display-5\"\n\t\t\t\t\t\t\tdata-app-selector=\".pie_progress__number\"></p>\n\t\t\t\t\t</div>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-title pt-3\">\n\t\t\t\t\t<h4 class=\"card-title py-2 mbr-fonts-style\" mbr-theme-style=\"display-5\" mbr-if=\"showTitle\">\n\t\t\t\t\t\tUnique Styles\n\t\t\t\t\t</h4>\n\t\t\t\t</div>\n\t\t\t\t<div class=\"mbr-crt-text pt-2\">\n\t\t\t\t\t<p class=\"mbr-fonts-style card-text\" data-app-selector=\".card-text\" mbr-theme-style=\"display-7\"\n\t\t\t\t\t\tmbr-if=\"showText\">\n\t\t\t\t\t\tLorem ipsum dolor sit amet, consectetur adipisicing elit.\n\t\t\t\t\t</p>\n\t\t\t\t</div>\n\t\t\t</div>\n\n\t\t\t\n\t\t</div>\n</section>",
+          "_styles": {
+            "padding-top": "(@paddingTop * 15px)",
+            "padding-bottom": "(@paddingBottom * 15px)",
+            "& when (@bg-type = 'color')": {
+              "background-color": "@bg-value"
+            },
+            "& when (@bg-type = 'image')": {
+              "background-image": "url(@bg-value)"
+            },
+            "h3": {
+              "text-align": "center",
+              "font-weight": "300"
+            },
+            ".wrap": {
+              "width": "150px",
+              "height": "150px",
+              "margin": "0 auto"
+            },
+            ".mbr-section-subtitle": {
+              "color": "#767676"
+            },
+            ".pie_progress__number": {
+              "text-align": "center !important"
+            },
+            ".card-title": {
+              "margin-bottom": "0"
+            },
+            ".card": {
+              "-webkit-flex-basis": "100%",
+              "flex-basis": "100%",
+              "word-wrap": "break-word"
+            },
+            ".svg-gradient": {
+              "position": "absolute"
+            },
+            "ellipse": {
+              "stroke": "rgba(206, 206, 206, 0.4)"
+            },
+            "path": {
+              "& when not (@gradientProgress)": {
+                "stroke": "@progressColor"
+              }
+            },
+            "@media (max-width: 991px) and (min-width: 768px)": {
+              ".card": {
+                "-webkit-flex-basis": "50%",
+                "flex-basis": "50%"
+              }
+            },
+            ".mbr-fallback-image.disabled": {
+              "display": "none"
+            },
+            ".mbr-fallback-image": {
+              "display": "block",
+              "background-size": "cover",
+              "background-position": "center center",
+              "width": "100%",
+              "height": "100%",
+              "position": "absolute",
+              "top": "0",
+              "& when (@bg-type = 'video')": {
+                "background-image": "url(@fallBackImage)"
+              }
+            }
+          },
+          "_cid": "u3jFFPCof7",
+          "_protectedParams": [],
+          "_global": false,
+          "_once": false,
+          "_params": {},
+          "_anchor": "progress-bars4-gu",
+          "_PHPplaceholders": [],
+          "_JSplaceholders": []
         },
         {
           "_name": "article02",

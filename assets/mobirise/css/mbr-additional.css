@@ -1336,58 +1336,6 @@ a {
 .cid-tWz08xDoMp .card .card-title {
   text-align: center;
 }
-.cid-u3jFFPCof7 {
-  padding-top: 90px;
-  padding-bottom: 90px;
-  background-color: #fafafa;
-}
-.cid-u3jFFPCof7 h3 {
-  text-align: center;
-  font-weight: 300;
-}
-.cid-u3jFFPCof7 .wrap {
-  width: 150px;
-  height: 150px;
-  margin: 0 auto;
-}
-.cid-u3jFFPCof7 .mbr-section-subtitle {
-  color: #767676;
-}
-.cid-u3jFFPCof7 .pie_progress__number {
-  text-align: center !important;
-}
-.cid-u3jFFPCof7 .card-title {
-  margin-bottom: 0;
-}
-.cid-u3jFFPCof7 .card {
-  -webkit-flex-basis: 100%;
-  flex-basis: 100%;
-  word-wrap: break-word;
-}
-.cid-u3jFFPCof7 .svg-gradient {
-  position: absolute;
-}
-.cid-u3jFFPCof7 ellipse {
-  stroke: rgba(206, 206, 206, 0.4);
-}
-@media (max-width: 991px) and (min-width: 768px) {
-  .cid-u3jFFPCof7 .card {
-    -webkit-flex-basis: 50%;
-    flex-basis: 50%;
-  }
-}
-.cid-u3jFFPCof7 .mbr-fallback-image.disabled {
-  display: none;
-}
-.cid-u3jFFPCof7 .mbr-fallback-image {
-  display: block;
-  background-size: cover;
-  background-position: center center;
-  width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-}
 .cid-u0Ytx2tEey {
   padding-top: 5rem;
   padding-bottom: 5rem;

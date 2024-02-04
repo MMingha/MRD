@@ -3337,13 +3337,13 @@ a {
 .cid-tWyCKHTrLn .card-text {
   color: #ffffff;
 }
-.cid-u2bxpydKWd {
+.cid-u3jIYbqWaf {
   background-image: url("../../../assets/images/business-woman-using-mobile-data-customer-connection-digital-marketing-innovative-34200-542-626x330.png");
 }
-.cid-u2bxpydKWd .mbr-fallback-image.disabled {
+.cid-u3jIYbqWaf .mbr-fallback-image.disabled {
   display: none;
 }
-.cid-u2bxpydKWd .mbr-fallback-image {
+.cid-u3jIYbqWaf .mbr-fallback-image {
   display: block;
   background-size: cover;
   background-position: center center;
@@ -3352,46 +3352,30 @@ a {
   position: absolute;
   top: 0;
 }
-.cid-u2bxpydKWd .container-fluid {
-  padding: 0;
-}
-@media (max-width: 992px) {
-  .cid-u2bxpydKWd .container-fluid {
-    padding: 0;
-  }
-}
-@media (max-width: 992px) {
-  .cid-u2bxpydKWd .container {
-    padding: 0;
-  }
-}
-.cid-u2bxpydKWd .title-wrapper {
-  padding: 0 16px;
-}
-.cid-u2bxpydKWd .title-wrapper .mbr-section-title {
-  margin-bottom: 0;
-}
-.cid-u2bxpydKWd .title-wrapper .mbr-text {
-  margin: 25px 0 0 0;
-}
-.cid-u2bxpydKWd .title-wrapper .mbr-section-btn {
-  margin-top: 100px;
-}
-@media (max-width: 992px) {
-  .cid-u2bxpydKWd .title-wrapper .mbr-section-btn {
-    margin-top: 40px;
-  }
-}
-.cid-u2bxpydKWd .mbr-section-title {
-  color: #ffffff;
-}
-.cid-u2bxpydKWd .mbr-text {
-  color: #ffffff;
+.cid-u3jIYbqWaf .mbr-section-title {
+  color: #C4CFDE;
+  margin-bottom: 20px;
   text-align: center;
 }
-.cid-u2bxpydKWd .mbr-section-title,
-.cid-u2bxpydKWd .mbr-section-btn {
+.cid-u3jIYbqWaf .mbr-section-subtitle {
+  color: #FFFFFF;
+  margin-bottom: 30px;
   text-align: center;
+}
+.cid-u3jIYbqWaf .mbr-text {
+  color: #878e99;
+  margin-top: 0;
+}
+.cid-u3jIYbqWaf .mbr-section-btn {
+  margin-top: 30px;
+}
+.cid-u3jIYbqWaf .mbr-section-btn .btn {
+  box-shadow: none !important;
+}
+.cid-u3jIYbqWaf .mbr-text,
+.cid-u3jIYbqWaf .mbr-section-btn {
+  text-align: center;
+  color: #ffffff;
 }
 .cid-u2WlC1D3yg {
   padding-top: 7rem;
